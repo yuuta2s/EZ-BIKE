@@ -14,18 +14,18 @@
             }
 
             .cls-2 {
-                fill: #017349;
+                fill: #fff;
             }
 
             .cls-3 {
-                fill: #019961;
+                fill: #47c8c0;
             }
         </style>
         <linearGradient id="Dégradé_sans_nom_25" x1="-1.54" y1="320.3" x2="213.31" y2="320.3"
             gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#b5d653" />
-            <stop offset=".5" stop-color="#019961" />
-            <stop offset="1" stop-color="#019961" />
+            <stop offset="0" stop-color="#85bac5" />
+            <stop offset=".5" stop-color="#47c8c0" />
+            <stop offset="1" stop-color="#47c8c0" />
         </linearGradient>
     </defs>
     <g id="ez-bike-logo">

@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculateur d'emission de CO2</title>
-    <script src="calculateur.js" defer></script>
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculer</title>
+
 </head>
+
 <body>
     <form id="calc">
         <label for="distance">Distance parcourue par jour (km) :</label>
@@ -14,5 +20,77 @@
         <input type="text" id="travailDays" name="consumption" required>
         <input type="submit" value="Calculer">
     </form>
+
+    <script>
+
+        // Burger menu
+        function burgerMenu() {
+            console.log('burgerMenu')
+            const navbarMobile = document.getElementById('navbar-mobile')
+            navbarMobile.classList.toggle('d-none')
+        }
+
+
+
+        let form = document.getElementById("calc")
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            console.log("oki");
+
+            //distance par jour
+            //jour travailes par semaine
+            const dist = parseFloat(document.getElementById("distance").value);
+            const trav = parseFloat(document.getElementById("travailDays").value);
+
+
+            if (isNaN(dist) || isNaN(trav)) {
+                alert("veuillez entrer une valeur");
+                return;
+            };
+
+
+            const totalem = (dist * trav) * 0.12;
+            const monthlyem = totalem * 4
+
+            alert("les émissions de co2 pour les trajets dom/trav sont de: " + monthlyem + " kg par mois.");
+        });
+
+        function displayHeader() {
+            console.log('displayHeader')
+            const header = document.createElement('header')
+            header.innerHTML = `
+                <header>
+                    <nav>
+                        <img src="../img/assets/ez-bike_logo.svg" id="logo">
+                        <ul class="navbar-desktop">
+                            <li><a href="/index.html">Accueil</a></li>
+                            <li><a href="/pages/modeEmploi.html">Mode d'emploi</a></li>
+                            <li><a href="/pages/maps.html">Trouver un vélo</a></li>
+                            <li><a href="/pages/calculateur.html">Calculateur</a></li>
+                            <li><a href="/pages/contact.html">Contact</a></li>
+                            </ul>
+                            </ul>
+                            </nav>
+                            </header>
+                            `
+            document.body.prepend(header)
+        }
+
+        // Afficher le footer sur tt les pages
+        function displayFooter() {
+            console.log('displayFooter')
+            const footer = document.createElement('footer')
+            footer.innerHTML = `
+            <p>&copy; 2024 EZ-BIKE</p>
+            `
+            document.body.append(footer)
+        }
+        displayHeader();
+        displayFooter();
+        burgerMenu();
+        
+        </script>
 </body>
+
 </html>
