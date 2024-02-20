@@ -49,10 +49,16 @@ nav {
     width: 50%;
 }
 
+
 #navbar-toggle {
     display: none;
 }
 
+@media screen and (max-width: 800px) {
+    .navbar-desktop {
+        display: none;
+    }
+}
 .bg-btn {
     background: var(--bleuHeader);
     color: var(--blanc);
@@ -116,6 +122,7 @@ footer {
     bottom: 0;
     z-index: 1000;
     text-align: center;
+    margin-top: 150px;
     padding: 20px 0;
 }
 

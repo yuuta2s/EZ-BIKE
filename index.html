@@ -1,12 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title></title>
+        <title>Acceuil - EZ-BIKE</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
+        <link href="./css/baseCustom.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <!-- STYLE CSS ACCEUIL -->
+        <style>
+            h1 {
+                font-size: 1.5em;
+                color: #20737e;
+            }
+
+            h3 {
+                font-size: 1.3em;
+                font-weight: bolder;
+            }
+
+            main {
+                margin-top: 125px;
+            }
+            
+            .imgSide {
+                max-width: 300px;
+            }
+
+            .arrDown {
+                width: 24px;
+            }
+
+            .containerArrow {
+                background-color: white;
+                border-style: none;
+            }
+
+            #part1 button {
+                padding-left: 8px;
+                padding-right: 8px;
+                padding-top: 4px;
+                padding-bottom: 4px;
+                font-size: 0.75em;
+            }
+
+            #btn-Co2 {
+                border-style: none;
+                background-color: #3AAEB5;
+                margin-right: 6px;
+            }
+
+            #btn-findStation {
+                border-color: #3AAEB5;
+                color: #3AAEB5;
+                margin-left: 6px;
+            }
+
+
+            .separateur {
+                height: 2px;
+                max-width: 45%;
+                background-color: #20737e;
+            }
+
+            /* Responsive pour min-width:1366px */
+
+            @media screen and (min-width: 1366px) {
+                body {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                main {
+                    max-width: 85%;
+                    margin-top: 175px;
+                }
+
+                section {
+                    min-height: 650px;
+                }
+
+                h1 {
+                    font-size: 2em;
+                    color: #20737e;
+                }
+
+                h3 {
+                    font-size: 1.65em;
+                    font-weight: bolder;
+                }
+
+                p {
+                    font-size: 1.35em;
+                }
+
+                .arrDown {
+                    width: 42px;
+                }
+
+                .imgContainer {
+                display: flex;
+                justify-content: flex-end;
+                }
+
+                .imgContainerMid {
+                    display: flex;
+                    justify-content: flex-start;
+                }
+                
+                .imgSide {
+                    max-width: 500px;
+                }
+
+                #part1 {
+                    flex-direction: row-reverse;
+                    margin-bottom: 96px;
+                }
+
+                .txt-content {
+                    max-width: 45%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+
+                #part2 {
+                    flex-direction: row;
+                    margin-top: 96px;
+                    margin-bottom: 96px;
+                }
+
+                #part3 {
+                    flex-direction: row-reverse;
+                    margin-top: 96px;
+                }
+
+                .separateur {
+                    max-width: 90%;
+                    margin: auto;
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                }
+            }
+        </style>
+
+</head>
+<body>
+    
+    <!-- Ajout de loading:"lazy" sur toutes les images afin de le charger uniquement lors de leurs visibilités à l'écran -->
+
+        <main class="d-fl fld-col fs-1em">
+        
+            <section class="d-fl fld-col jc-sb m-16px p-16px mb-32px" id="part1">
+                
+                <div class="imgContainer w-50 mb-32px">
+                    <img src="./img/assets/ez-bike_hero.webp" class="imgSide" alt="imageTop" loading="lazy">
+                </div>
+                
+            <div class="txt-content">
+                    <div>
+                        <h1>
+                            Roulez vert à Marseille <br>
+                            avec notre Vélib' <br>
+                            zéro CO2
+                        </h1>
+                        <p class="mt-16px">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis libero repellat iusto modi laborum ipsam maxime fugiat officia quia rem repudiandae similique repellendus doloremque voluptatem accusantium laudantium, dolorum temporibus laboriosam quos distinctio quod cumque sequi sunt assumenda? Doloremque molestias officiis et fuga ipsum laboriosam voluptatibus sed est molestiae, eum dolores ut officia iure nesciunt accusamus. At recusandae dolor ex beatae quas.
+                        </p>
+                    </div>
+                    <div class="d-fl mt-16px ml-8px" style="width: fit-content;">
+                        <a href="./PageHtml/calculator.html">
+                            <button 
+                                class="mr-8px bord-rad-all-12px color-white fw-bolder" 
+                                id="btn-Co2">
+
+                                   Calcul CO2
+        
+                            </button>
+                        </a>
+                        <p class="fs-1em" style="align-self: center;">
+                            Ou
+                        </p>
+                        <a href="./PageHtml/maps.html">
+                            <button 
+                                class="bg-col-white ml-8px bord-rad-all-12px" 
+                                id="btn-findStation">
+                            
+                                    Trouver une station
+                            
+                            </button>
+                    </a>
+                    </div>
+            </div>
+        
+        
+            </section>
+            
+            <div class="d-fl jc-center">
+                <a href="#part2">
+                    <button class="containerArrow">
+                        <img class="arrDown" src="./img/assets/down-arrow.svg" alt="arrowDown" loading="lazy">
+                    </button>
+                </a>
+            </div>
+        
+        
+            <section class="d-fl fld-col jc-sb m-16px p-16px mt-32px mb-32px" id="part2">
+        
+                <div class="imgContainerMid w-50 mb-32px">
+                    <img src="./img/assets/ez-bike_city.webp" class="imgSide" alt="imageTop">
+                </div>
+        
+                <div class="txt-content">
+                    <h3>
+                        1 - Comment ça marche ?
+                    </h3>
+                    <p class="mt-16px">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia minus ducimus officia ex quasi pariatur dignissimos, soluta eum fugiat id provident beatae vitae, accusantium molestiae exercitationem nemo distinctio repudiandae.
+                    </p>
+                    <div 
+                    class="mt-16px mb-16px separateur">
+                        <!-- Séparateur -->
+                    </div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum laborum odit sequi similique, velit hic suscipit porro, exercitationem numquam temporibus dolor veniam recusandae, deserunt earum.
+                    </p>
+                </div>
+            </section>
+        
+        
+            <div class="d-fl jc-center">
+                <a href="#part3">
+                    <button class="containerArrow">
+                        <img class="arrDown" src="./img/assets/down-arrow.svg" alt="" loading="lazy">
+                    </button>
+                </a>
+            </div>
+        
+        
+            <section class="d-fl fld-col jc-sb m-16px p-16px mt-32px" id="part3">
+        
+                <div class="imgContainer w-50 mb-32px">
+                    <img src="./img/assets/ez-bike_station.webp" class="imgSide" alt="imageTop" loading="lazy">
+                </div>
+                
+                <div class="txt-content">
+                    <h3>
+                        2 - Se rendre à la station
+                    </h3>
+                    <p class="mt-16px">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, animi sapiente hic, laboriosam, ducimus vitae deleniti reprehenderit atque magnam mollitia molestiae?
+                    </p>
+        
+                    <div class="mt-16px mb-16px separateur">
+                        <!-- Séparateur -->
+                    </div>
+        
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ad ea praesentium ipsam voluptatibus cumque ullam rerum sed cupiditate totam. Officiis, ratione. Consequatur voluptatum repudiandae harum minima debitis doloremque architecto quas blanditiis quos. Qui ipsum corrupti cupiditate officiis tempora possimus.
+                    </p>
+                </div>
+        
+            </section>
+            
+        
+        </main>
+
+        <!-- Insertion du script.js commun -->
+        <script src="./js/script.js"></script>
+
+        <script>
+            displayHeader();
+            displayFooter();
+            burgerMenu();
+        </script>
     
     </body>
 </html>
