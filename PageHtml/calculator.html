@@ -23,14 +23,6 @@
 
     <script>
 
-        // Burger menu
-        function burgerMenu() {
-            console.log('burgerMenu')
-            const navbarMobile = document.getElementById('navbar-mobile')
-            navbarMobile.classList.toggle('d-none')
-        }
-
-
 
         let form = document.getElementById("calc")
 
@@ -56,36 +48,7 @@
             alert("les émissions de co2 pour les trajets dom/trav sont de: " + monthlyem + " kg par mois.");
         });
 
-        function displayHeader() {
-            console.log('displayHeader')
-            const header = document.createElement('header')
-            header.innerHTML = `
-                <header>
-                    <nav>
-                        <img src="../img/assets/ez-bike_logo.svg" id="logo">
-                        <ul class="navbar-desktop">
-                            <li><a href="/index.html">Accueil</a></li>
-                            <li><a href="/pages/modeEmploi.html">Mode d'emploi</a></li>
-                            <li><a href="/pages/maps.html">Trouver un vélo</a></li>
-                            <li><a href="/pages/calculateur.html">Calculateur</a></li>
-                            <li><a href="/pages/contact.html">Contact</a></li>
-                            </ul>
-                            </ul>
-                            </nav>
-                            </header>
-                            `
-            document.body.prepend(header)
-        }
-
-        // Afficher le footer sur tt les pages
-        function displayFooter() {
-            console.log('displayFooter')
-            const footer = document.createElement('footer')
-            footer.innerHTML = `
-            <p>&copy; 2024 EZ-BIKE</p>
-            `
-            document.body.append(footer)
-        }
+        
         displayHeader();
         displayFooter();
         burgerMenu();
