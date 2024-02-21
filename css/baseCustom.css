@@ -14,6 +14,10 @@
     display: inline-block;
 }
 
+.d-none{
+    display: none;
+}
+
 /* position */
 
 .p-static {
