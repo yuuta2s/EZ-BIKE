@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../js/script.js"></script>
+    <title>Document</title>
+    <!-- Style aplliquer aux éléments du DOM -->
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        /* padding: 100px; */
+      }
+
+      .carousel,
+      .section-ccm {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      /* MOBILE */
+      .carousel {
+        display: none;
+      }
+
+      .carousel .slides {
+        max-width: 300px;
+        /* min-width: 300px; */
+        position: relative;
+        margin: auto;
+      }
+
+      .carousel .slide {
+        display: none;
+      }
+
+      .carousel .slide__img {
+        width: 100%;
+      }
+
+      .carousel .prev,
+      .carousel .next {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 8px;
+        margin-top: -22px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+
+      .carousel .prev {
+        left: 10px;
+      }
+
+      .carousel .next {
+        right: 10px;
+      }
+      ction-ccmon-ccm {
+        display: block;
+      }
+      .section-ccm .slides {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+      }
+
+      .section-ccm .slide {
+        flex: 1 1 400px;
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        .carousel {
+          display: block;
+        }
+
+        .section-ccm {
+          display: none;
+        }
+        img {
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section-ccm">
+      <div class="slides">
+        <div class="slide">
+          <img class="slide__img" src="../img/assets/icon-documents.svg" />
+        </div>
+        <div class="slide">
+          <img class="slide__img" src="../img/assets/icon-windows.svg"" />
+        </div>
+        <div class="slide">
+          <img class="slide__img" src="../img/assets/icon-idea.svg" />
+        </div>
+        <!-- Ajouter plus de slides si besoins -->
+
+        <!-- Bouttons qui gérent la slide actuelle selon quelle btn est clicked -->
+      </div>
+    </div>
+
+    <!-- Conteneur de l'ensemble du carrousse -->
+    <!-- MOBILE -->
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <img class="slide__img" src="../img/assets/icon-documents.svg"" />
+        </div>
+        <div class="slide">
+          <img class="slide__img" src="../img/assets/icon-windows.svg" />
+        </div>
+        <div class="slide">
+          <img class="slide__img" src="../img/assets/icon-idea.svg" />
+        </div>
+        <!-- Ajouter plus de slides si besoins -->
+
+        <!-- Bouttons qui gérent la slide actuelle selon quelle btn est clicked -->
+        <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+    </div>
+    <script src="../js/modeEmploi.js"></script>
+    <script>
+      displayHeader()
+      displayFooter()
+      burgerMenu()
+    </script>
+  </body>
+</html>
