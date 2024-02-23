@@ -66,6 +66,7 @@ body {
   @media (max-width: 600px) {
     .carousel {
       display: block;
+      margin-top:100px;
     }
 
     .section-ccm {
