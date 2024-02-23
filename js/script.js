@@ -9,7 +9,7 @@ function displayHeader() {
             <img src="../img/assets/ez-bike_logo.svg" id="logo">
             <ul class="navbar-desktop">
                 <li><a href="../index.html">Accueil</a></li>
-                <li><a href="../PageHtml/modeEmploi.html">Mode d'emploi</a></li>
+                <li><a href="./PageHtml/modeEmploi.html">Mode d'emploi</a></li>
                 <li><a href="../PageHtml/maps.html">Trouver un vélo</a></li>
                 <li><a href="../PageHtml/calculator.html">Calculateur</a></li>
                 <li><a href="../PageHtml/contact.html">Contact</a></li>

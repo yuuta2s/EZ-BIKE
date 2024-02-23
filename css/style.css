@@ -30,6 +30,11 @@ nav {
   /* Modification ici pour la disposition en colonne sur mobile */
   justify-content: space-evenly;
   align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
 }
 
 .nav-brand {
