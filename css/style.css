@@ -1,5 +1,7 @@
 body{
-  min-height: 600px;
+  min-height: 100vh;
+  display: flex;
+    flex-direction: column;
 }
 
 * {
@@ -258,4 +260,8 @@ header {
     margin-left: 10px; /* Add margin to separate text and logo */
   }
   
+}
+
+footer{
+  margin-top: auto;
 }
