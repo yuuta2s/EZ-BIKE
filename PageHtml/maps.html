@@ -35,7 +35,7 @@
 
         <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
         <script>
-            var map = L.map('map').setView([43.2965, 5.3698], 12);
+            var map = L.map('map').setView([43.2965, 5.3698], 14);
 
             L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 attribution: '&copy; Contributeurs OpenStreetMap'
@@ -61,21 +61,21 @@
             function getBikeIcon(numBikesAvailable) {
                 if (numBikesAvailable > 5) {
                     return L.icon({
-                        iconUrl: 'file:///C:/Users/simplon/ez-bike/EZ-BIKE/css/images/bike-green.svg',
+                        iconUrl: '../img/assets/bike-green.svg',
                         iconSize: [32, 32],
                         iconAnchor: [16, 32],
                         popupAnchor: [0, -32]
                     });
                 } else if (numBikesAvailable > 0) {
                     return L.icon({
-                        iconUrl: 'file:///C:/Users/simplon/ez-bike/EZ-BIKE/css/images/bike-orange.svg',
+                        iconUrl: '../img/assets/bike-orange.svg',
                         iconSize: [32, 32],
                         iconAnchor: [16, 32],
                         popupAnchor: [0, -32]
                     });
                 } else {
                     return L.icon({
-                        iconUrl: 'file:///C:/Users/simplon/ez-bike/EZ-BIKE/css/images/bike-red.svg',
+                        iconUrl: '../img/assets/bike-red.svg',
                         iconSize: [32, 32],
                         iconAnchor: [16, 32],
                         popupAnchor: [0, -32]
