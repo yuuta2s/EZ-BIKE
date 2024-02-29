@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+  }
+  
+  h1 {
+    margin-left: 300px;
+  }
+
+  #searchStation {
+    margin-left: 300px;
+    padding: 10px;
+}
+
+#button-green {
+    background-color: #20737e; 
+    margin: 20px;
+    display: flex;
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  justify-content: flex-end;
+	  align-items: stretch;
+	  align-content: center;
+}
