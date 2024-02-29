@@ -65,6 +65,21 @@ body {
   .section-ccm{
     margin-top: 150px;
   }
+  h3 ,p {
+    margin-top: 20px;
+  }
+  h2{
+    margin-left: 100px;
+    margin-top: 50px;
+  }
+  
+  .slide:hover{
+  box-shadow: 5px 11px 18px 0px rgba(175,175,175,0.74);
+  }
+ .slide{
+  padding: 24px;
+
+ }
 
   @media (max-width: 600px) {
     .carousel {
@@ -78,4 +93,5 @@ body {
     img {
       height: 150px;
     }
+    
   }
