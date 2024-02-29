@@ -17,14 +17,14 @@
 
         <section class="formTextContact bord-black p-16px mb-16px mt-16px">
           <div class="formContact">
-            <form>
+            <form id="contactForm">
               <div class="nomForm">
                 <label for="nom">Votre nom</label><br />
                 <input type="text" id="nom" name="nom" /><br />
               </div>
               <div class="prenomForm">
                 <label for="prénom">Votre prénom</label><br />
-                <input type="text" id="prénom" name="prénom" /><br />
+                <input type="text" id="prenom" name="prénom" value="" /><br />
               </div>
               <div class="telForm">
                 <label for="tel">Téléphone</label><br />
@@ -38,9 +38,7 @@
                 <label for="message">Votre message</label><br />
                 <input type="text" id="message" name="message" /><br />
               </div>
-              <div class="buttonForm">
-                <input type="submit" value="Envoyez" />
-              </div>
+              <button type="submit" id="buttonContact">Envoyez</button>
             </form>
           </div>
 
