@@ -1,4 +1,4 @@
-document.getElementById("buttonForm").addEventListener("click", function(event){
+document.addEventListener("click", function(event){
     event.preventDefault()
   });
   
