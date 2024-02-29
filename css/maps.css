@@ -21,3 +21,9 @@ body {
 	  align-items: stretch;
 	  align-content: center;
 }
+#map {
+
+  width: 100%;
+  min-height: 50vh;
+ 
+}
