@@ -35,7 +35,7 @@ body {
   .carousel .next {
     position: absolute;
     top: 50%;
-    width: auto;
+    width: 32px;
     padding: 8px;
     margin-top: -22px;
     font-size: 20px;
@@ -43,11 +43,11 @@ body {
   }
 
   .carousel .prev {
-    left: 10px;
+    left: -20px;
   }
 
   .carousel .next {
-    right: 10px;
+    right: -20px;
   }
   ction-ccmon-ccm {
     display: block;
@@ -81,7 +81,7 @@ body {
 
  }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     .carousel {
       display: block;
       margin-top:100px;
@@ -93,5 +93,5 @@ body {
     img {
       height: 150px;
     }
-    
+   
   }
