@@ -21,6 +21,7 @@ body {
   --clearBleu: #47c8c0;
   --blanc: #fff;
   --main-font: Poppins;
+  --main-bold: Poppins weight: 800;
 }
 
 #logo {
@@ -43,7 +44,7 @@ nav {
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
-  margin-top: 30px; /* Adjust this value as needed */
+  
 }
 .nav-brand {
   font-family: var(--main-font);
@@ -67,7 +68,6 @@ nav {
   border-radius: 5px;
   font-size: 3rem;
   cursor: pointer;
-  text-align: center;
 }
 
 ul {
@@ -84,21 +84,15 @@ a:hover {
   color: var(--clearBleu);
 }
 
-.btn {
+.bg-btn {
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  background: var(--bleuOcean);
   color: var(--blanc);
   font-size: 1.2rem;
   cursor: pointer;
-  margin-top: 50px;
 }
 
-.btn:hover {
-  background: var(--bleuOcean);
-  color: var(--blanc);
-}
 
 footer {
   background: var(--bleuHeader);
@@ -166,7 +160,7 @@ header {
       transform: rotate(-90deg);
     }
     & ~ .mobile-nav {
-      height: 240px;
+      min-height: 400px;
     }
   }
 }
@@ -180,9 +174,8 @@ header {
   -ms-transition: all 500ms ease;
   -o-transition: all 500ms ease;
   transition: all 500ms ease;
-
   position: absolute;
-  top: 60px;
+  top: 80px;
   left: 0;
   right: 0;
   background: var(--bleuHeader);
@@ -248,7 +241,7 @@ header {
   }
 
   .nav-brand {
-    font-family: "Times New Roman", Times, serif;
+    font-family: var(--main-font);
     font-size: 2rem;
     color: black;
     margin-left: 10px; /* Add margin to separate text and logo */
