@@ -9,6 +9,10 @@
         <!-- STYLE CSS ACCEUIL -->
         <style>
 
+            html {
+                scroll-behavior: smooth;
+            }
+
             h1 {
                 font-size: 1.5em;
                 color: #20737e;
@@ -18,6 +22,10 @@
                 font-size: 1.3em;
                 font-weight: bolder;
             }
+
+            button:hover {
+                cursor: pointer;
+            }
             
             .imgSide {
                 max-width: 300px;
@@ -25,6 +33,10 @@
 
             .arrDown {
                 width: 24px;
+            }
+
+            .arrDown:hover {
+                cursor: pointer;
             }
 
             .containerArrow {
@@ -44,12 +56,14 @@
                 border-style: none;
                 background-color: #3AAEB5;
                 margin-right: 6px;
+                height: 48px;
             }
 
             #btn-findStation {
                 border-color: #3AAEB5;
                 color: #3AAEB5;
                 margin-left: 6px;
+                height: 48px;
             }
 
 
@@ -71,7 +85,7 @@
 
                 main {
                     max-width: 85%;
-                    margin-top: 75px;
+                    margin-top: 128px;
                 }
 
                 section {
@@ -94,11 +108,12 @@
 
                 .arrDown {
                     width: 42px;
+                    margin-bottom: 24px;
                 }
 
                 .imgContainer {
-                display: flex;
-                justify-content: flex-end;
+                    display: flex;
+                    justify-content: flex-end;
                 }
 
                 .imgContainerMid {
@@ -112,7 +127,7 @@
 
                 #part1 {
                     flex-direction: row-reverse;
-                    margin-bottom: 96px;
+                    margin-bottom: 64px;
                 }
 
                 .txt-content {
@@ -124,13 +139,14 @@
 
                 #part2 {
                     flex-direction: row;
-                    margin-top: 96px;
-                    margin-bottom: 96px;
+                    margin-bottom: 128px;
+                    margin-top: 144px;
                 }
 
                 #part3 {
                     flex-direction: row-reverse;
-                    margin-top: 96px;
+                    margin-bottom: 16px;
+                    margin-top: 124px;
                 }
 
                 .separateur {
@@ -141,8 +157,7 @@
                 }
             }
         </style>
-
-</head>
+    </head>
 <body>
     
     <!-- Ajout de loading:"lazy" sur toutes les images afin de le charger uniquement lors de leurs visibilités à l'écran -->
@@ -183,11 +198,11 @@
                             <button 
                                 class="bg-col-white ml-8px bord-rad-all-12px" 
                                 id="btn-findStation">
-                            
+
                                     Trouver une station
-                            
+
                             </button>
-                    </a>
+                        </a>
                     </div>
             </div>
         
