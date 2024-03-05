@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style> 
+
+        html {
+            box-sizing: border-box;
+            max-width: 360px;
+        }
+
+        body {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 16px;
+        }
+
+        footer {
+            margin-top: 48px;
+        }
+
+        #textTop h1{
+            text-align: center;
+            margin:16px;
+        }
+
+        #textTop p {
+            max-width: 300px;
+        }
+
+        #countdownContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 16px;
+            max-width: 340px;
+        }
+
+        #countdownContainer section{
+            margin: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-width: 65px;
+            padding: 6px;
+            border-radius: 10px;
+            border: 2px solid grey;
+            background-color: #3aaeb5;
+            box-shadow: 4px 4px 5px grey;
+        }
+
+
+        @media screen and (min-width: 1366px) {
+            html {
+                max-width: 100%;
+            }
+
+            body {
+                font-size: 1.5em;
+            }
+            #textTop p{
+                max-width: 700px;
+                text-align: center;
+            }
+
+            #countdownContainer section {
+                padding: 8px;
+                margin: 16px;
+            }
+
+            #countdownContainer section p{
+            font-size: 1rem;
+        }
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+
+        <div id="textTop">
+            <h1>Coming Soon</h1>
+            <p>
+                La fonctionnalité de recherche de Vélib est en cours de developpement... Elle arriva le 1er septembre 2023.
+            </p>
+        </div>
+        <div id="countdownContainer">
+            <section>
+                <span id="day"></span>
+                <span><p>Jours</p></span>
+            </section>
+            <section>
+                <span id="hour"></span>
+                <span><p>Heures</p></span>
+            </section>
+            <section>
+                <span id="minute"></span>
+                <span><p>Minutes</p></span>
+            </section>
+            <section>
+                <span id="second"></span>
+                <span><p>Secondes</p></span>
+            </section>
+        </div>
+
+
+
+    </main>
+
+    <!-- Insertion du script.js commun -->
+    <script src="../js/script.js"></script>
+    <script src="../js/comingSoon.js"></script>
+
+    <script>
+        displayHeader();
+        displayFooter();
+        burgerMenu();
+    </script>
+</body>
+</html>
