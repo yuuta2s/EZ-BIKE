@@ -51,6 +51,7 @@ h1 {
   box-sizing: border-box;
   border: none;
   border-bottom: 2px solid black;
+  border-radius: 8px;
 }
 
 
@@ -92,7 +93,7 @@ background-color: #20737e; /* Green */
   max-width: 50%;
   margin: auto;
   max-height: 50%;
-  background-image: url(../img/assets/feuilles-vent.svg);
+  /* background-image: url(../img/assets/feuilles-vent.svg); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -106,10 +107,11 @@ background-color: #20737e; /* Green */
 }
 
 .containerContact {
-  background-image: url(../img/assets/bubbles.svg), url(../img/assets/tige.svg);
+  background-image: url(../img/assets/bubbles.svg), url(../img/assets/tige.svg), url(../img/assets/feuilles-vent.svg);
   background-position: left, right;
   background-repeat: no-repeat;
   background-size: 300px, 400px;
+  
 }
 
 }
