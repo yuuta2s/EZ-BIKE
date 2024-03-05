@@ -1,7 +1,12 @@
-body{
+@font-face {
+  font-family: Poppins;
+  src: url(../img/assets/fonts/Poppins/Poppins-Regular.ttf);
+}
+body {
   min-height: 100vh;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
+  font-family: Poppins;
 }
 
 * {
@@ -15,6 +20,7 @@ body{
   --grisBleu: #85bac5;
   --clearBleu: #47c8c0;
   --blanc: #fff;
+  --main-font: Poppins;
 }
 
 #logo {
@@ -28,6 +34,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+  padding: 0;
 }
 
 nav {
@@ -35,11 +42,11 @@ nav {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 80%;
+  width: 100%;
   margin-top: 30px; /* Adjust this value as needed */
 }
 .nav-brand {
-  font-family: "Times New Roman", Times, serif;
+  font-family: var(--main-font);
   font-size: 2rem;
   color: black;
 }
@@ -56,8 +63,6 @@ nav {
 
 #navbar-toggle {
   display: block;
-  background: var(--bleuOcean);
-  color: black;
   border: none;
   border-radius: 5px;
   font-size: 3rem;
@@ -133,7 +138,7 @@ header {
     height: 60px;
     cursor: pointer;
     font-family: serif;
-    position:sticky;
+    position: sticky;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
@@ -183,38 +188,30 @@ header {
   background: var(--bleuHeader);
   z-index: 1;
 
-
-
   ul {
     width: 100%;
     padding: 0;
     list-style: none;
-    li {
-      background: var(--bleuHeader);
-      border-bottom: 1px solid var(--blanc);
-      a {
-        width: 100%;
-        display: block;
-        padding: 18px 0;
-        color: #fff;
-        text-align: center;
-        text-decoration: none;
-        &:hover {
-          background: #23054E;
-        }
-        }
-      }
-    }
   }
-
-
+  a {
+    width: 100%;
+    display: block;
+    padding: 18px 0;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+  }
+  li {
+    background: var(--bleuHeader);
+    border-bottom: 1px solid var(--blanc);
+  }
+}
 
 .d-none {
   display: none;
 }
 
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 900px) {
   #navbar-toggle {
     display: none;
   }
@@ -228,7 +225,6 @@ header {
     background-color: var(--bleuHeader);
   }
 
- 
   .navmob {
     display: flex; /* Change to flex to display on desktop */
   }
@@ -245,23 +241,20 @@ header {
     display: flex;
     align-items: center; /* Align items vertically in the center */
     justify-content: space-between; /* Space items horizontally */
-    padding: 0 20px; /* Add padding to the header */
   }
-  
+
   #logo {
     height: 60px;
   }
 
-  
   .nav-brand {
     font-family: "Times New Roman", Times, serif;
     font-size: 2rem;
     color: black;
     margin-left: 10px; /* Add margin to separate text and logo */
   }
-  
 }
 
-footer{
+footer {
   margin-top: auto;
 }
