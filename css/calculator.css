@@ -36,3 +36,51 @@ input[type="submit"] {
 input[type="submit"]:hover{
     background-color: var(--bleuHeader);
 }
+.containerCalc {
+    background-color:rgba(255, 254, 250, 0.669); 
+    width: 50%;
+    height: 80%;
+    align-self: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{ background: url(../img/assets/Calculateur.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 80%;
+    }
+    
+    
+
+.title{
+    align-self: center;
+    position: relative;
+}
+
+form {
+    text-align: left;
+    width: 80%;
+}
+
+#calculerButton{
+    border-radius: 10px 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.text {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #000; /* Add a border line to the bottom */
+    outline: none;
+}

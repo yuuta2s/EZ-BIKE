@@ -15,9 +15,15 @@ form.addEventListener('submit', (e) => {
         return;
     };
 
+    if (trav > 7 ){
+        alert("Vous ne pouvez pas choisir au dela de 7 jours");
+        return;
+    }
+    
+
 
     const totalem = (dist * trav) * 0.12;
-    const monthlyem = totalem * 4
+    const monthlyem =Math.floor( totalem * 4)
 
-    alert("les émissions de co2 pour les trajets dom/trav sont de: " + monthlyem + " kg par mois.");
+    alert("vos émissions de co2 pour vos trajets domicile-travail sont de: " + monthlyem + " kg par mois.");
 });
