@@ -1,8 +1,4 @@
 
-body{
-    height: 800px;
-}
-
 
 main {
     display: flex;
@@ -35,4 +31,8 @@ input[type="submit"] {
     background-color: #3AAEB5;
     color: #fff;
     cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: var(--bleuHeader);
 }
