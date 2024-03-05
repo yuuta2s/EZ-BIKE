@@ -16,17 +16,68 @@
 </head>
 
 
+<style>
+    .containerCalc {
+        background-color:cadetblue;
+        width: 60%;
+        height: 50%;
+        align-self: center;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    body{ background: url(../img/assets/Calculateur.svg);
+        background-repeat: no-repeat;
+        background-position: center 50%; /* Adjust the background position */
+        margin: 0;
+        
+        
+    }
+    form {
+        text-align: left;
+        width: 80%;
+    }
+
+    #calculerButton{
+        border-radius: 10px 10px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .text {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 15px;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 1px solid #000; /* Add a border line to the bottom */
+        outline: none;
+    }
+
+
+</style>
 
 <body>
     <section class="containerCalc">
 
         <form id="calc">
-            <label for="distance">Distance parcourue par jour (km) :</label>
-            <input type="text" id="distance" name="distance" required>
-            <label for="travailDays"> Jours travaillés dans la semaine:</label>
-            <input type="text" id="travailDays" name="consumption" required>
-            <input type="submit" value="Calculer">
+            <label for="distance">Distance parcourue par jour ( en kilomètres) :</label>
+            <input type="text" id="distance" class="text" name="distance" required>
+            <label for="travailDays"> Nombres de jours travaillés dans la semaine:</label>
+            <input type="text" id="travailDays" class="text" name="consumption" required>
+            <input type="submit" value="Calculer" id="calculerButton" onclick="showAlert()">
+
         </form>
+        <p class="pastext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat deleniti perferendis laudantium incidunt
+        saepe fugit ipsum aut in dolorum, delectus et atque sint tempora doloribus minus, quo veritatis obcaecati
+        velit?
+    </p>
     </section>
 
     <script>
