@@ -70,7 +70,59 @@ background-color: #20737e; /* Green */
   height: 50%;
 }
 
-@media screen and (min-width: 1366px) {
+@media screen and (max-width: 850px) {
+  .formContact form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+}
+}
+
+@media screen and (min-width: 850px) {
+  .formContact form {
+    display: grid;  
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 2em;
+    grid-row-gap: 0px;
+    
+    }
+
+    .formContact form {
+      display: grid;  
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 2em;
+      grid-row-gap: 0px;
+      
+      
+      }
+      
+  .nomForm { grid-area: 1 / 1 / 2 / 2; }
+  .prenomForm { grid-area: 1 / 2 / 2 / 3; }
+  .telForm { grid-area: 2 / 1 / 3 / 2; }
+  .emailForm { grid-area: 2 / 2 / 3 / 3; }
+  .messageForm { grid-area: 3 / 1 / 4 / 3; }
+  .buttonForm { grid-area: 4 / 1 / 5 / 2; }
+  
+  .formTextContact {
+    display: flex;
+    max-width: 50%;
+    margin: auto;
+    max-height: 50%;
+    /* background-image: url(../img/assets/feuilles-vent.svg); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+
+
+@media screen and (min-width: 1100px) {
 .formContact form {
     display: grid;  
     grid-template-columns: repeat(2, 1fr);
