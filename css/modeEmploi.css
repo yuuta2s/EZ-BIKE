@@ -43,11 +43,11 @@ body {
   }
 
   .carousel .prev {
-    left: -20px;
+    left: 5px;
   }
 
   .carousel .next {
-    right: -20px;
+    right: 5px;
   }
   ction-ccmon-ccm {
     display: block;
@@ -80,6 +80,14 @@ body {
   padding: 24px;
 
  }
+ svg{
+  display: flex;
+  align-self: flex-end;
+  margin-right: 50%;
+}
+.slide{
+  margin-bottom: 100px;
+}
 
   @media (max-width: 800px) {
     .carousel {
@@ -93,5 +101,11 @@ body {
     img {
       height: 150px;
     }
-   
+   h3 ,p{
+    font-size: 15px;
+    text-align: center;
+   }
+   h2{
+    margin: auto;
+   }
   }
