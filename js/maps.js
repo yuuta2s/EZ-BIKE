@@ -52,9 +52,11 @@ Promise.all([stationInformation(), stationStatus()])
         stationsInfo.forEach(stationInfo => {
             var stationStatusInfo = stationsStatus.find(status => status.station_id === stationInfo.station_id);
             if (stationInfo.lat && stationInfo.lon && stationStatusInfo) {
+
                 var marker = L.marker([parseFloat(stationInfo.lat), parseFloat(stationInfo.lon)], {
                     icon: getBikeIcon(stationStatusInfo.num_bikes_available)
                 }).addTo(map);
+
                 marker.bindPopup('<b>Nom de la station:</b> ' + stationInfo.name + '<br><b>Vélos disponibles:</b> ' + stationStatusInfo.num_bikes_available);
             }
         });
@@ -69,12 +71,15 @@ async function fetchvelo() {
         let userChoice = inputSearchbar.value.toLowerCase();
         stationInformation().then(stationsInfo => {
             stationStatus().then(stationsStatus => {
+                //retourne le tableau filtré
                 let stationPostfilter = stationsInfo.filter(station => station.name.toLowerCase().includes(userChoice));
                 map.eachLayer(layer => {
                     if (layer instanceof L.Marker) {
                         map.removeLayer(layer);
                     }
+                    //suppression des points fitrer
                 });
+                // affichage icone
                 stationPostfilter.forEach((stationInfo) => {
                     var stationStatusInfo = stationsStatus.find(status => status.station_id === stationInfo.station_id);
                     if (stationInfo.lat && stationInfo.lon && stationStatusInfo) {
@@ -97,7 +102,7 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -105,11 +110,12 @@ function scrollFunction() {
 }
 
 // When the user clicks on the button, scroll to the top of the document
-function topFunction() {
+function resetMap() {
     map = map.off();
     map = map.remove();
 
-//   document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0; // For Safari
  map = L.map('map').setView([43.2965, 5.3698], 14);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -163,57 +169,17 @@ Promise.all([stationInformation(), stationStatus()])
     .then(([stationsInfo, stationsStatus]) => {
         stationsInfo.forEach(stationInfo => {
             var stationStatusInfo = stationsStatus.find(status => status.station_id === stationInfo.station_id);
+            //si tous les IDs sont identiques et que la latitude, la longitude et les infos sur le statut existent : 
             if (stationInfo.lat && stationInfo.lon && stationStatusInfo) {
+                //marqueur sur la carte
                 var marker = L.marker([parseFloat(stationInfo.lat), parseFloat(stationInfo.lon)], {
                     icon: getBikeIcon(stationStatusInfo.num_bikes_available)
                 }).addTo(map);
+                //Popup
                 marker.bindPopup('<b>Nom de la station:</b> ' + stationInfo.name + '<br><b>Vélos disponibles:</b> ' + stationStatusInfo.num_bikes_available);
             }
         });
     })
     .catch(error => console.error('Erreur lors de la récupération des données:', error));
-//   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
-
-
-
-// }
-
-    //     }
-    //  )
-    
-   
-
-
-// // console.log("js loaded");   début du code sans condition icone et sans Promise.all
-
-// // var map = L.map("map-container").setView([43.2977, 5.3751], 13); 
-
-// // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-// //     attribution: '© OpenStreetMap contributors'
-// // }).addTo(map);
-
-
-
-
-
-// // //  var bikeStation = L.marker([stationLatitude, stationLongitude]).addTo(map);
-// // //  bikeStation.bindPopup("Nom de la station de vélo");
-
-// // Récupére l'élément DOM de la carte
-// var mapElement = document.getElementById('map');
-
-// if (mapElement) {
-//     // Initialise la carte Leaflet
-//     var map = L.map('map').setView([43.3002, 5.3694], 16); // Coordonnées géographiques du Panier à Marseille et niveau de zoom
-
-
-//     // L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-//     //     attribution: '© OpenStreetMap contributors'
-//     // }).addTo(map);
-
-//     L.marker([43.3002, 5.3694]).addTo(map)
-//         .bindPopup('Quartier du Panier, Marseille')
-//         .openPopup();
-// }
 

@@ -1,4 +1,6 @@
 
+<<<<<<< HEAD
+=======
 projet deployé sur Live Server.
 
 
@@ -150,3 +152,4 @@ Les expressions régulières utilisées sont les suivantes :
 
 
 
+>>>>>>> 2f48959732b1b7e903cc73a5e61422712e5c982a
