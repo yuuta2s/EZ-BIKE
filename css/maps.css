@@ -11,28 +11,27 @@ body {
  */
 
  #myBtn {
-    /* background-color: #20737e; 
+   
     margin: 20px;
     display: flex;
 	  flex-direction: row;
 	  flex-wrap: wrap;
 	  justify-content: flex-end;
 	  align-items: stretch;
-	  align-content: center; */
+	  align-content: center; 
     display: none; 
-    background-color: #20737e;
-  position: fixed; 
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  /* background-color: red; Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+    background-color: #20737e; 
+    /* position: fixed;  */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px;
+    z-index: 99; 
+    border: none;
+    /* outline: none; Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    /* padding: 15px; Some padding */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 14px; /* Increase font size */
 }
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
