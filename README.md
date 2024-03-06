@@ -40,7 +40,7 @@ Ce script JavaScript gère l'affichage d'un en-tête (header), d'un pied de page
 
 La page d'acceuille est la premiére page sur laquelle la plupart des utilisateurs vont attérir.
 
-## Elles est composée de trois bloc : "Roulez vert"; "Comment ça marche ?" et "Se rendre à la station".
+Elles est composée de trois bloc : "Roulez vert"; "Comment ça marche ?" et "Se rendre à la station".
 
 Sous les deux premiers blocs se trouve des fléches pointants vers le bas et si l'utilisateur clique dessus, la page scroll de maniére "smooth" vers la partie suivante.
 
@@ -84,7 +84,7 @@ Plus précisément, une fois que les données sur les stations de vélos et leur
 -Points qui pourraient être améliorés prioritairement : augmenter le nombre de fonctions et factoriser.
 
 
-##Calculateur d'émissions de CO2 pour les trajets domicile-travail
+## Calculateur d'émissions de CO2 pour les trajets domicile-travail
 Ce script JavaScript est conçu pour calculer les émissions de CO2 mensuelles résultant des trajets domicile-travail en voiture. 
 
 #Comment l'utiliser ?
@@ -132,7 +132,7 @@ Consultez l'alerte avec les émissions de CO2 mensuelles estimées pour vos traj
 
 
 
-##Contact:
+## Contact:
 La page de contact a pour objectif d'établir une communication entre l'utilisateur et EZ-BIKE.
 
 Ainsi, le code HTML contient uniquement un formulaire comprenant 5 champs de type texte.
