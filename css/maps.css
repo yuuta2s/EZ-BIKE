@@ -2,28 +2,80 @@ body {
     margin: 0;
   }
   
-  h1 {
+  /* h1 {
     margin-left: 300px;
   }
 
-  #searchStation {
-    margin-left: 300px;
-    padding: 10px;
-}
 
-#button-green {
-    background-color: #20737e; 
+    
+ */
+
+ #myBtn {
+    /* background-color: #20737e; 
     margin: 20px;
     display: flex;
 	  flex-direction: row;
 	  flex-wrap: wrap;
 	  justify-content: flex-end;
 	  align-items: stretch;
-	  align-content: center;
+	  align-content: center; */
+    display: none; 
+    background-color: #20737e;
+  position: fixed; 
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  /* background-color: red; Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
 }
-#map {
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
 
+#map {
   width: 100%;
+  /* height: 400px; */
+  max-width: 1920px; 
+  margin: 0 auto; 
   min-height: 50vh;
- 
+
+}
+
+
+h1 {
+  /* margin-left: 300px; */
+
+  font-size: 2rem;
+  text-align: center; 
+  margin-bottom: 1rem; 
+}
+
+/* h3 {
+  margin-left: 300px;
+
+  font-size: 2rem;
+  text-align: center; 
+  margin-bottom: 1rem; 
+} */
+
+
+#searchStation {
+  /* text-align: center;  */
+  margin-bottom: 1rem; 
+  /* margin-left: 300px; */
+  padding: 10px;
+}
+
+#findStation {
+  width: 100%; 
+  max-width: 400px; 
+  margin: 0 auto; 
+  padding: 0.5rem;
+  box-sizing: border-box; 
 }
