@@ -16,7 +16,7 @@ function displayHeader() {
             <input type="checkbox" class="mobile-check " id="check" />
 <label for="check" class="label-for-check rm navbar-toggle bg-btn" id="navbar-toggle" onclick="burgerMenu()"><i class="fa-solid fa-bars" style="color: var(--blanc);"></i></label>
 <nav class="mobile-nav ">
-            <ul class="navbar-mobile d-flox " id="navbar-mobile">
+            <ul style="z-index: 1000" class="navbar-mobile d-flox " id="navbar-mobile">
             <li><a href="../index.html">Accueil</a></li>
             <li><a href="../PageHtml/modeEmploi.html">Mode d'emploi</a></li>
             <li><a href="../PageHtml/maps.html">Trouver un vélo</a></li>
