@@ -160,8 +160,16 @@
                     margin-bottom: 16px;
                 }
             }
-    </style>
-</head>
+
+            .imgContainer img{
+                filter: hue-rotate(90deg);
+            }
+
+        
+
+
+        </style>
+    </head>
 <body>
     
     <!-- Ajout de loading:"lazy" sur toutes les images afin de le charger uniquement lors de leurs visibilités à l'écran -->
@@ -171,7 +179,7 @@
             <section class="d-fl fld-col jc-sb m-16px p-16px mb-32px" id="part1">
                 
                 <div class="imgContainer w-100 mb-32px">
-                    <img src="./img/assets/ez-bike_hero.webp" class="imgSide" alt="imageTop" loading="lazy">
+                    <img src="./img/assets/ez-bike_hero.webp" class="imgSide" alt="imageTop" loading="lazy" id="hero">
                 </div>
                 
             <div class="txt-content">

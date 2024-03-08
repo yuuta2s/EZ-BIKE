@@ -46,19 +46,27 @@ input[type="submit"]:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
+#svg {
+    position: absolute;
+    top: -40px; /* Adjust the distance above the container */
+    right: -22px;
+    width: 90px;
+    display: block;
+}
 body{ background: url(../img/assets/Calculateur.svg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: 80%;
     }
-    
-    
 
 .title{
     align-self: center;
     position: relative;
+    max-width: 500px;
+    margin-top: 0px;
 }
 
 form {
@@ -84,3 +92,10 @@ label {
     border-bottom: 1px solid #000; /* Add a border line to the bottom */
     outline: none;
 }
+@media screen and (max-width: 900px) {
+    body{ background: white;
+}
+
+#svg{
+    display: none;
+}}

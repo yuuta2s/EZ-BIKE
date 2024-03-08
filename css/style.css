@@ -26,6 +26,8 @@ body {
 
 #logo {
   height: 60px;
+  padding-left: 80px;
+  margin-top: 10px;
 }
 
 header {
@@ -85,7 +87,7 @@ a:hover {
 }
 
 .bg-btn {
-  padding: 10px 20px;
+  padding: -6px 20px;
   border: none;
   border-radius: 5px;
   color: var(--blanc);
@@ -104,6 +106,12 @@ footer {
   padding: 20px 0;
 }
 
+.lien{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
 .d-flox {
   display: flex;
   flex-direction: column;
@@ -126,27 +134,26 @@ header {
   }
   label {
     top: 0;
-    left: 0;
+    right:10px;
     width: 60px;
     color: #fff;
     height: 60px;
     cursor: pointer;
     font-family: serif;
-    position: sticky;
+    position: fixed;
     -webkit-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -ms-transition: all 500ms ease;
     -o-transition: all 500ms ease;
     transition: all 500ms ease;
     align-items: center;
+
   }
   .click {
     top: 22px;
     left: 60px;
     color: #fff;
-    float: right;
-    font-size: 12px;
-    position: absolute;
+   font-size: 12px;
   }
 }
 
