@@ -35,7 +35,7 @@ function displayFooter() {
   console.log("displayFooter");
   const footer = document.createElement("footer");
   footer.innerHTML = `
-    <p>&copy; 2024 EZ-BIKE</p>
+  <p>&copy; 2024 EZ-BIKE</p>
     `;
   document.body.append(footer);
 }
