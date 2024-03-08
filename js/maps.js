@@ -6,14 +6,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 var apiKey = "MjE0ZDNmMGEtNGFkZS00M2FlLWFmMWItZGNhOTZhMWQyYzM2";
 
-// Fonction pour obtenir les informations sur les stations
+// Fonction pour obtenir les informations des stations
 function stationInformation() {
     return fetch("https://api.omega.fifteen.eu/gbfs/2.2/marseille/en/station_information.json?key=" + apiKey)
         .then(response => response.json())
         .then(data => data.data.stations);
 }
 
-// Fonction pour obtenir les status des stations (vélos disponibles)
+// Fonction pour obtenir le status des stations (vélos disponibles)
 function stationStatus() {
     return fetch("https://api.omega.fifteen.eu/gbfs/2.2/marseille/en/station_status.json?key=" + apiKey)
         .then(response => response.json())
@@ -77,9 +77,9 @@ async function fetchvelo() {
                     if (layer instanceof L.Marker) {
                         map.removeLayer(layer);
                     }
-                    //suppression des points fitrer
+                    //suppression des points fitrés
                 });
-                // affichage icone
+                // affichage icônes
                 stationPostfilter.forEach((stationInfo) => {
                     var stationStatusInfo = stationsStatus.find(status => status.station_id === stationInfo.station_id);
                     if (stationInfo.lat && stationInfo.lon && stationStatusInfo) {
@@ -102,7 +102,7 @@ let mybutton = document.getElementById("myBtn");
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";

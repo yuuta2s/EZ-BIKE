@@ -1,14 +1,6 @@
 body {
     margin: 0;
   }
-  
-  /* h1 {
-    margin-left: 300px;
-  }
-
-
-    
- */
 
  #myBtn {
    
@@ -34,7 +26,7 @@ body {
     font-size: 14px; /* Increase font size */
 }
 #myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+  background-color: #555; 
 }
 
 #map {
@@ -49,7 +41,6 @@ body {
 
 h1 {
   /* margin-left: 300px; */
-
   font-size: 2rem;
   text-align: center; 
   margin-bottom: 1rem; 
@@ -57,7 +48,6 @@ h1 {
 
 /* h3 {
   margin-left: 300px;
-
   font-size: 2rem;
   text-align: center; 
   margin-bottom: 1rem; 
