@@ -95,12 +95,7 @@ svg {
   margin-bottom: 100px;
 }
 
-.backgroundSvgMehdy{
-  background-image: url("../img/assets/bubbles.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 50%;
-}
+
 
 @media (max-width: 800px) {
   .carousel {
